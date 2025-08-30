@@ -1,46 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - Equal Fields Equal Opportunity</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Module 5.4</title>
+  <style>
+    /* make the background cover the whole page */
+    html, body { height: 100%; margin: 0; }
+
+    body {
+      background-image: url('gacha_beach.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;          /* key line */
+      background-attachment: fixed;    /* optional: parallax-like */
+      background-color: #e6f5f5;       /* fallback color */
+    }
+
+    h1 {
+      font-family: Georgia, serif;
+      color: aqua;
+      background-color: blanchedalmond;
+      border: 2px dotted blue;
+      padding: 10px 15px;
+      width: 250px;
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    p {
+      font-family: sans-serif;
+      font-style: italic;
+      text-align: justify;
+      background-color: rgba(204, 238, 238, 0.9); /* keeps text readable on image */
+      margin: 20px auto;
+      padding: 20px;
+      border-top: 3px dotted;
+      border-bottom: 3px dashed;
+      border-right: 3px solid;
+      border-left: 3px double;
+      width: 500px;
+      max-width: 90vw; /* avoids overflow on small screens */
+    }
+
+    span {
+      font-style: italic;
+      font-weight: bold;
+      color: rgb(0, 0, 255);
+      margin-left: 2px;
+      margin-right: 5px;
+    }
+  </style>
 </head>
 <body>
-  <!-- Navigation -->
-  <header>
-    <h1>Equal Fields Equal Opportunity</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-    </nav>
-  </header>
+  <h1>Office Productivity</h1>
 
-  <!-- About Section -->
-  <main>
-    <section>
-      <h2>About Us</h2>
-      <p>
-        Equal Fields Equal Opportunity is built on the belief that everyone—regardless of gender—deserves access to the same opportunities in education, work, and daily life. 
-      </p>
-      <p>
-        This website is a platform to raise awareness, spark conversations, and provide meaningful support in the movement toward equality.
-      </p>
-    </section>
-
-    <!-- Mission & Vision -->
-    <section>
-      <h2>Our Mission</h2>
-      <p>
-        To promote gender equality by amplifying unheard voices and empowering both women and men to build a fairer society together.
-      </p>
-
-      <h2>Our Vision</h2>
-      <p>
-        A world where gender no longer limits opportunities, and everyone is free to achieve their fullest potential.
-      </p>
-    </section>
-
-    <!-- Connect -->
-    <section>
-      <h2>Joi
+  <p>
+    The book contains 
+    <span>MS Word 2010, MS Excel 2010, MS PowerPoint 2010, and MS Outlook 2010</span>. 
+    The book aims to educate students in creating documents, worksheets, presentations,
+    and organization using different software that may work relatively.
+  </p>
+</body>
+</html>
