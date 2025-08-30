@@ -5,48 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Module 5.4</title>
   <style>
-    /* make the background cover the whole page */
-    html, body { height: 100%; margin: 0; }
-
-    body {
-      background-image: url('gacha_beach.jpg');
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover;          /* key line */
-      background-attachment: fixed;    /* optional: parallax-like */
-      background-color: #e6f5f5;       /* fallback color */
+    html, body {
+      height: 100%;
+      margin: 0;
     }
 
+    /* 1. Background image centered, not repeated */
+    body {
+      background-image: url('gacha_beach.jpg'); /* Make sure image is in same folder as this file */
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-color: #cccccc; /* fallback color */
+    }
+
+    /* 2. Heading specs */
     h1 {
-      font-family: Georgia, serif;
-      color: aqua;
-      background-color: blanchedalmond;
-      border: 2px dotted blue;
-      padding: 10px 15px;
-      width: 250px;
-      margin: 20px auto;
+      font-family: Georgia, serif;         /* font family of your choice */
+      color: #00ffff;                      /* HEX color for text (cyan here) */
+      background-color: #ffebcd;           /* HEX background (blanched almond) */
+      border: 2px dotted blue;             /* 2px dotted blue border */
+      padding: 10px 15px;                  /* 10px top/bottom, 15px left/right */
+      width: 250px;                        /* width 250px */
+      margin: 0 auto 20px auto;            /* centered + 20px bottom margin */
       text-align: center;
     }
 
+    /* 3. Paragraph specs */
     p {
-      font-family: sans-serif;
-      font-style: italic;
-      text-align: justify;
-      background-color: rgba(204, 238, 238, 0.9); /* keeps text readable on image */
+      font-family: Arial, sans-serif;
+      font-style: italic;                  /* italicized */
+      text-align: justify;                 /* justified */
+      background-color: hsl(180, 40%, 90%);/* HSL background color */
+      padding: 20px;                       /* 20px padding all around */
+      border-top: 3px dotted black;        /* different styles each side */
+      border-right: 3px solid black;
+      border-bottom: 3px dashed black;
+      border-left: 3px double black;
+      width: 500px;                        /* width 500px */
       margin: 20px auto;
-      padding: 20px;
-      border-top: 3px dotted;
-      border-bottom: 3px dashed;
-      border-right: 3px solid;
-      border-left: 3px double;
-      width: 500px;
-      max-width: 90vw; /* avoids overflow on small screens */
     }
 
+    /* 4. Span specs */
     span {
       font-style: italic;
       font-weight: bold;
-      color: rgb(0, 0, 255);
+      color: rgb(0, 128, 0);               /* RGB font color (green here) */
       margin-left: 2px;
       margin-right: 5px;
     }
